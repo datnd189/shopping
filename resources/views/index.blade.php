@@ -16,7 +16,7 @@
 		</div>
 		<div>
 		<div class="pull-right price">{{ $product->price }}</div>
-		<a type="button" class="btn btn-primary">Add to cart</a>
+		<a type="button" class="btn btn-primary" href="{{ route('product.addToCart',['id'=>$product->id]) }}">Add to cart</a>
 		</div>
 	</div>
 
